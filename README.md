@@ -23,5 +23,6 @@ If you plan to expose the subscription port publicly, be sure to add security to
 
 
 ```
-docker run --volume /path/to/code:/code ensignavenger/uwsgi-py3
+docker run -p 80:80 -p 443:443 --volume /fastrouter:/subscription ensignavenger/docker-fastrouter
+
 ```
